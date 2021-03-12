@@ -49,7 +49,7 @@ const SizeSelector = ({
           {options.length === 0 && <option value="out-of-stock">OUT OF STOCK</option>}
           {options}
         </select>
-        <span className="ov-option-arrow-icon"><Icon icon={chevronDown} /></span>
+        <span className="ov-option-arrow-icon"><Icon className="ov-size-selector-open" icon={chevronDown} /></span>
       </div>
     </span>
   );

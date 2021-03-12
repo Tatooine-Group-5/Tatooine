@@ -29,7 +29,7 @@ const SideProductInfo = ({
       {Object.keys(ratings).length > 0 && (
         <span>
           <StarRating ratings={ratings} />
-          <a href="#headerBlock">Read all reviews</a>
+          <a className="ov-link-to-reviewa" href="#headerBlock">Read all reviews</a>
         </span>
       )}
       {product.category && <p className="ov-product-category">{product.category.toUpperCase()}</p>}

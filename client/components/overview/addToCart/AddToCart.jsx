@@ -68,7 +68,7 @@ const AddToCart = ({
         aria-label="Select as favorite"
       >
         <span className="ov-gold-star-icon">
-          {isFavorite ? <Icon icon={star} color="gold" /> : <Icon icon={starOutline} /> }
+          {isFavorite ? <Icon className="ov-gold-star" icon={star} color="gold" /> : <Icon className="ov-star-outline" icon={starOutline} /> }
         </span>
       </span>
     </div>
@@ -88,10 +88,6 @@ AddToCart.propTypes = {
     photos: PropTypes.arrayOf(PropTypes.object),
     // eslint-disable-next-line react/forbid-prop-types
     skus: PropTypes.object,
-    // skus: PropTypes.objectOf(PropTypes.shape({
-    //   quantity: PropTypes.number,
-    //   size: PropTypes.string,
-    // })),
   }).isRequired,
   selectedSize: PropTypes.string,
   selectedQuantity: PropTypes.string,

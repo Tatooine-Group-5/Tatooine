@@ -13,7 +13,7 @@ const BottomProductInfo = ({ product }) => {
     keyCount += 1;
     return (
       <p key={keyCount} className="ov-feature-text-container">
-        <span className="ov-feature-check-icon"><InlineIcon key={keyCount} icon={check} width="1.5em" height="1.5em" /></span>
+        <span className="ov-feature-check-icon"><InlineIcon className="ov-feature-check" key={keyCount} icon={check} width="1.5em" height="1.5em" /></span>
         <span className="ov-feature-text">{item.feature}</span>
       </p>
     );
@@ -27,9 +27,9 @@ const BottomProductInfo = ({ product }) => {
       <div className="ov-bottom-product-info-right-container">
         {features}
         <div className="ov-social-media-icon-container">
-          <span className="ov-social-media-icon"><InlineIcon icon={facebookIcon} /></span>
-          <span className="ov-social-media-icon"><InlineIcon icon={twitterIcon} /></span>
-          <span className="ov-social-media-icon"><InlineIcon icon={pinterestIcon} /></span>
+          <span className="ov-social-media-icon"><InlineIcon className="ov-facebook-icon" icon={facebookIcon} /></span>
+          <span className="ov-social-media-icon"><InlineIcon className="ov-twitter-icon" icon={twitterIcon} /></span>
+          <span className="ov-social-media-icon"><InlineIcon className="ov-pinterest-icon" icon={pinterestIcon} /></span>
         </div>
       </div>
     </div>

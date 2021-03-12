@@ -75,7 +75,7 @@ const ExpandedView = ({
         tabIndex="0"
         role="button"
       >
-        <Icon icon={closeIcon} />
+        <Icon className="ov-close-expanded-image" icon={closeIcon} />
       </span>
       {(previousImageId !== -1 && !magnified) && (
         <span
@@ -86,7 +86,7 @@ const ExpandedView = ({
           aria-label="previous image"
           role="button"
         >
-          <Icon icon={arrowLeftBoldOutline} />
+          <Icon className="ov-left-arrow" icon={arrowLeftBoldOutline} />
         </span>
       )}
       {(nextImageId !== -1 && !magnified) && (
@@ -98,7 +98,7 @@ const ExpandedView = ({
           aria-label="next image"
           role="button"
         >
-          <Icon icon={arrowRightBoldOutline} />
+          <Icon className="ov-right-arrow" icon={arrowRightBoldOutline} />
         </span>
       )}
       {!magnified && (

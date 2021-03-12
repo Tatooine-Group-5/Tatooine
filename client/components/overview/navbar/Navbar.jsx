@@ -14,7 +14,7 @@ const Navbar = ({ cart }) => {
       <h1 className="ov-navbar-title">Project Hackwalk</h1>
       <span className="ov-exterior-cart-container">
         <span className="ov-interior-cart-container">
-          <Icon icon={cartOutline} />
+          <Icon className="ov-navbar-cart" icon={cartOutline} />
           {cart.length > 0 && (
           <span className="ov-cart-item-number">
             {itemCount}

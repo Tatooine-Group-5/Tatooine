@@ -7,6 +7,9 @@ public/app.js
 ## API KEYS ##
 config.js
 
+## SECRET ##
+/secret
+
 ## MAC ##
 .DS_Store
 

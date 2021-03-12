@@ -48,7 +48,7 @@ const QuantitySelector = ({
         {selectedSize === null && <option value="none">-</option>}
         {options}
       </select>
-      <span className="ov-option-arrow-icon"><Icon icon={chevronDown} /></span>
+      <span className="ov-option-arrow-icon"><Icon className="ov-quantity-selector-open" icon={chevronDown} /></span>
     </div>
   );
 };

@@ -75,7 +75,7 @@ const CardThumbnails = class extends React.PureComponent {
           onClick={() => this.handleThumbnailImage(1)}
           type="button"
         >
-          &#10095;
+          &#10094;
         </button>
       </div>
     );

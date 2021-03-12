@@ -183,7 +183,7 @@ const ImageGallery = ({
           role="button"
           style={{ visibility: `${thumbnailSection > 0 ? 'visible' : 'hidden'}` }}
         >
-          <Icon icon={chevronUp} />
+          <Icon className="ov-thumbnail-arrow-up" icon={chevronUp} />
         </span>
         {thumbnails}
         <span
@@ -195,7 +195,7 @@ const ImageGallery = ({
           role="button"
           style={{ visibility: `${photos.length - (thumbnailSection + 1) * 7 > 0 ? 'visible' : 'hidden'}` }}
         >
-          <Icon icon={chevronDown} />
+          <Icon className="ov-thumbnail-arrow-down" icon={chevronDown} />
         </span>
       </div>
       {previousImageId !== -1 && (
@@ -207,7 +207,7 @@ const ImageGallery = ({
           aria-label="previous image"
           role="button"
         >
-          <Icon icon={arrowLeftBoldOutline} />
+          <Icon className="ov-arrow-left" icon={arrowLeftBoldOutline} />
         </span>
       )}
       {nextImageId !== -1 && (
@@ -219,7 +219,7 @@ const ImageGallery = ({
           aria-label="next image"
           role="button"
         >
-          <Icon icon={arrowRightBoldOutline} />
+          <Icon className="ov-arrow-right" icon={arrowRightBoldOutline} />
         </span>
       )}
       <span
@@ -230,7 +230,7 @@ const ImageGallery = ({
         tabIndex="0"
         role="button"
       >
-        <Icon icon={arrowExpandAll} />
+        <Icon className="ov-expand-image" icon={arrowExpandAll} />
       </span>
     </div>
   );
