@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
-
+const { Fragment } = React;
 import { Icon } from '@iconify/react';
 import magnifyIcon from '@iconify-icons/mdi/magnify';
 import Q0Star from '@iconify-icons/fluent/star-20-regular';
@@ -457,7 +457,7 @@ class Reviews extends React.Component {
     ));
 
     return (
-      <div>
+      <Fragment>
         <div className="rr-review-input">
           <div className="rr-search-icon">
             <Icon icon={magnifyIcon} />
@@ -750,7 +750,7 @@ class Reviews extends React.Component {
             </div>
           </div>
         </Modal>
-      </div>
+      </Fragment>
     );
   }
 }

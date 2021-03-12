@@ -67,7 +67,7 @@ class RandR extends React.PureComponent {
       productId,
     };
 
-    axios.get('http://localhost:3000/reviews', { params })
+    axios.get('/reviews', { params })
       .then((r) => {
         this.setState({
           reviews: r.data,
