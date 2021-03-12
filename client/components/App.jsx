@@ -5,7 +5,7 @@ import QuestionsAnswers from './QuestionsAnswers/QuestionsAnswers';
 import RelatedProduct from './RelatedProduct/RelatedProduct';
 // import Config from '../../config.js';
 const pId = 19092;
-const pName = 'Alberto Romper';
+const pName = `Slacker's Slacks`;
 
 const App = () => (
   <div>
